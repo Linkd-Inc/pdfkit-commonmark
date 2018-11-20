@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maiers/pdfkit-commonmark.git"
+    "url": "https://github.com/Linkd-Inc/pdfkit-commonmark.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
@@ -20,8 +20,7 @@
     "test": "mocha --compilers js:babel-core/register --recursive test/",
     "test:coverage": "nyc --reporter=html --reporter=text npm run test",
     "lint": "eslint src/",
-    "lint:fix": "eslint --fix src/",
-    "prepublishOnly": "npm run clean && npm run build"
+    "lint:fix": "eslint --fix src/"
   },
   "keywords": [
     "markdown",
