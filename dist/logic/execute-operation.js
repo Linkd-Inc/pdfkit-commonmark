@@ -112,7 +112,9 @@ exports['default'] = function (operation, doc, options) {
                 textOptions.width -= _indent;
             }
         }
-
+        if ((options.pdfkit || {}).hasOwnProperty('x')) {
+            doc.x = options.pdfkit.x;
+        }
         doc.text(operation.text || ' ', textOptions);
     }
 };
