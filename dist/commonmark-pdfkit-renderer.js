@@ -281,12 +281,12 @@ function _interopRequireDefault(obj) {
                     stack.push({
                         font: this.options.font || 'default',
                         fontSize: this.options.fontSize || 12,
-                        fillColor: 'black',
-                        strokeColor: 'black',
-                        fillOpacity: 1,
-                        strokeOpacity: 1,
-                        continued: false,
-                        listDepth: 0
+                        fillColor: this.options.fillColor || 'black',
+                        strokeColor: this.options.strokeColor || 'black',
+                        fillOpacity: this.options.fillOpactity || 1,
+                        strokeOpacity: this.options.strokeOpacity || 1,
+                        continued: this.options.continued || false,
+                        listDepth: this.options.listDepth || 0
                     });
 
                     /*
