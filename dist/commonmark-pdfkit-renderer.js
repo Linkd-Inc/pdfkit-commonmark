@@ -279,7 +279,7 @@ function _interopRequireDefault(obj) {
 
                     // define initial values
                     stack.push({
-                        font: 'default',
+                        font: this.options.font || 'default',
                         fontSize: this.options.fontSize || 12,
                         fillColor: 'black',
                         strokeColor: 'black',
